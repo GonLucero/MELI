@@ -1,0 +1,68 @@
+.ContainerVenta{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    margin: 16px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.Estado{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: rgba(0,0,0,0.55);
+}
+.RowVenta{
+    display: flex;
+    justify-content: space-between;
+}
+.RowVenta h1{
+    width: 100%;
+    font-size: 22px;
+    line-height: 25.9px;
+    color: black;
+    font-weight: 500;
+    
+}
+.Price{
+    display: flex;
+    flex-direction: row;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 24px 0;
+
+    /* font-weight: inherit;  */
+    font-weight: 400;
+    color: rgba(0,0,0,0.9);
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    letter-spacing: normal; 
+}
+.Price .NumberPrice{
+    padding-left: 7px;
+}
+.ButtonCard{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 4px;
+    height: 48px;
+    padding: 24px;
+    outline: 0;
+    cursor: pointer;
+    background-color: #3483fa;
+    /* color: #3483fa; */
+}
+.solid{
+    background-color: transparent;
+    color: white;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    /* line-height: 48px; */
+    /* color: aqua; */
+}
+.ButtonCard:hover{
+    background-color: #2968c8;
+}

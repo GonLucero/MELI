@@ -1,0 +1,16 @@
+
+.ContainerHeader {
+    width: 100%;
+    background-color: #fff159;
+    height: 50px;
+}
+.WrapperHeader{
+    max-width: 1200px;
+    height: 32px;
+    padding: 8px 8px;
+    margin: 0 auto;
+}
+.img{
+    width: 134px;
+    height: 34px;
+}

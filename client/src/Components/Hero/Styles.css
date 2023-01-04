@@ -1,0 +1,25 @@
+.ContainerHero{
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.RowHero a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(85, 85, 206);
+    padding: 2.5px 0;
+    transition: all 300ms ease-in-out;
+    
+}
+
+.RowHero .click{
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid lightgrey;
+}
+.RowHero .back{
+    color: black;
+}
+.RowHero a:hover{
+    color: blue;    
+}

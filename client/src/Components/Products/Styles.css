@@ -1,0 +1,46 @@
+.ContainerProduct{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    /* border: 1px solid red; */
+    background-color: white;
+    border-radius: 6px;
+}
+.PanelProduct{
+    background-color: "blue";
+    box-shadow: "grey";  
+    display: grid;
+    grid-template-columns: 67fr 33fr;
+}
+.ColumnProduct{
+    display: subgrid;
+    flex-direction: row;
+}
+.GalleryProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 530px;
+}
+.Description{
+    border-top: 1px solid lightgrey;
+    width: 88%;
+    margin: 0 auto;
+
+}
+.Description h4{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 32px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+.Description p,span{
+    line-height: 27px;
+    font-size: 20px;
+    margin-bottom: 32px;
+    color: #666666;
+}
+.imgProduct{
+    height: 75%;
+}
