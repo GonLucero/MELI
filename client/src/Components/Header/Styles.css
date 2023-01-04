@@ -5,6 +5,8 @@
     height: 50px;
 }
 .WrapperHeader{
+    display: flex;
+    flex-direction: row;
     max-width: 1200px;
     height: 32px;
     padding: 8px 8px;
@@ -14,3 +16,49 @@
     width: 134px;
     height: 34px;
 }
+.SearchbarInput{
+    width: 598px;
+    height: 35px;
+    /* margin-left: 150px; */
+    padding-left: 15px;
+    font-size: 16px;
+    color: black;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    border-color: lightgrey;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.SearchbarInput:focus{
+    outline : none;
+
+}
+.SearchbarInput::placeholder{
+    color: #cdcdcd;
+}
+.SearchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 1px 0 0 lightgrey;
+    margin-left: 100px;
+}
+.SearchButton{
+    padding: 12px;
+    /* padding-right: 50px; */
+    cursor: pointer;
+    box-sizing: border-box;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    background: url(./ic_Search.png) white center center no-repeat;
+    width: 45px;
+    height: 35px;
+}
+.Separator{
+    background-color: "black";
+    width: 1px;
+    height: 1px;
+}
+
+
+

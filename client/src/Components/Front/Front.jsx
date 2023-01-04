@@ -9,9 +9,6 @@ import './Styles.css'
 
 
 function Front() {
-
-  const loading = 0;
-
   const dispatch = useDispatch();
   // me traigo la info del videojuego
   const itemDetail = useSelector((store) => store.ProductDetail);
