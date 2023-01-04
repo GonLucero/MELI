@@ -6,7 +6,8 @@ const ENDPOINTS = {
   SEARCH: `${URL}/sites/MLA/search?limit=4&q=:query`,
   ITEM: `${URL}/items/:id`,
   ITEM_DESCRIPTION: `${URL}/items/:id/description`,
-  CURRENCY: `${URL}/currencies/:id`
+  CURRENCY: `${URL}/currencies/:id`,
+  CATEGORIES: `${URL}/categories/:id`
 };
 
 const getAuthor = function(){
@@ -33,10 +34,11 @@ const getItemDetailEndpoint = function(itemId){
 
 const getItemDetail = function(data){
   return new Promise(function(resolve, reject){
-    Promise.all([getItem(data, true), getAuthor()]).then(function(values){
+    Promise.all([getItem(data, true), getAuthor(), getCategoriesID(data.category_id)]).then(function(values){
       resolve({
         "author": values[1],
-        "item": values[0]
+        "item": values[0],
+        "categories": values[2]
       });
     }).catch(function(error){
       reject(error);
@@ -101,7 +103,6 @@ const getCategories = function(filters){
 }
 
 
-
 const getDescription = function(itemId){
   return new Promise(function(resolve, reject){
     const urlApiItemDescription = ENDPOINTS.ITEM_DESCRIPTION.replace(":id", itemId);
@@ -126,6 +127,22 @@ const getCurrency = function(currencyId){
   });
 };
 
+const getCategoriesID = function(categorieId){
+  return new Promise(function(resolve, reject){
+    const urlApiCategorieID = ENDPOINTS.CATEGORIES.replace(":id", categorieId);
+    axios.get(urlApiCategorieID)
+    .then(function(categorieResponse){
+      const AllCategories = []
+      var categories = categorieResponse.data.path_from_root.map((c)=>{
+        AllCategories.push(c.name)
+      })
+      resolve({
+        AllCategories,
+      });
+    })
+  });
+};
+
 const getItem = function(data, detailed = false){
   var promise = new Promise(function(resolve, reject){
     var result = {
@@ -143,6 +160,9 @@ const getItem = function(data, detailed = false){
       result.price.currency = currencyData.symbol;
       result.price.decimals = currencyData.decimals;
     }));
+    // neededPromises.push(getCategoriesID(data.category_id).then(function(categoryData){
+    //   result.category = categoryData;
+    // }));
     if(!detailed){
       if(data.thumbnail){
         result.picture = data.thumbnail.replace(/-I\./, "-X.");

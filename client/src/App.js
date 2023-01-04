@@ -1,12 +1,16 @@
-import React, { Fragment } from "react";
+import React from "react";
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import "./Styles/Global.css";
-import { Front } from "./Components/Front/Front";
+import Front from './Components/Front/Front';
 function App() {
   return (
-    <>  
-      <Front/>
-      {/* <Global /> */}
-    </>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route exact path="/items/:id" element={<Front/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
