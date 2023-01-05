@@ -153,7 +153,8 @@ const getItem = function(data, detailed = false){
       },
       picture: "",
       condition: data.condition,
-      free_shipping:  data.shipping.free_shipping
+      free_shipping:  data.shipping.free_shipping,
+      adress: data.seller_address.state.name
     };
     let neededPromises = [];
     neededPromises.push(getCurrency(data.currency_id).then(function(currencyData){

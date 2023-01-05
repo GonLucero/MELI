@@ -1,6 +1,8 @@
 const initialState = { //hago un estado inicial
     ProductDetail: [],
+    loadingDetail : true,
     SearchProduct: [],   
+    loadingSearch : true
   };
   
   // 13)
@@ -9,12 +11,18 @@ const initialState = { //hago un estado inicial
             case "SEARCH_PRODUCT":
                 return {
                     ...state,
-                    SearchProduct: action.payload
+                    SearchProduct: action.payload,
+                    loadingSearch: false,
+                    ProductDetail: [],
+                    loadingDetail: true
                 }
             case "DETAIL_PRODUCT":
                 return {
                     ...state,
                     ProductDetail: action.payload,
+                    loadingDetail: false,
+                    SearchProduct: [],
+                    loadingSearch: true,
                 };
             default:
                 return state;

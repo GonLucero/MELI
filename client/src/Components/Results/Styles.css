@@ -1,0 +1,15 @@
+
+.WrapperFront {
+    max-width: 1184px;
+    margin: 0 auto;
+}
+
+.ListFront {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 3px;
+}
+.Navbar2{
+    margin-right: 17px;
+}

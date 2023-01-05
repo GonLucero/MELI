@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-  export function SeachProducts(name) {
+  export function SearchProducts(name) {
     return function (dispatch) {
         axios.get(`http://localhost:3001/items?search=${name}`)
             .then(r => r.data)
@@ -26,7 +26,6 @@ export function GetProductDetail(id) {
 }
 
 export function Get_Detail(payload) {
-    console.log("payloadd",payload)
     return {
         type: 'DETAIL_PRODUCT',
         payload

@@ -1,8 +1,8 @@
-.ContainerFront {
-    /* background-color: lightgrey; */
-}
 
 .WrapperFront {
     max-width: 1184px;
     margin: 0 auto;
+}
+.Navbar{
+    margin-right: 17px;
 }

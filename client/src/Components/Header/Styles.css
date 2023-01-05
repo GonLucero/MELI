@@ -17,7 +17,7 @@
     height: 34px;
 }
 .SearchbarInput{
-    width: 598px;
+    width: 800px;
     height: 35px;
     /* margin-left: 150px; */
     padding-left: 15px;
@@ -50,7 +50,7 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     border: none;
-    background: url(./ic_Search.png) white center center no-repeat;
+    background: url(./ic_Search.png) rgb(234, 233, 233) center center no-repeat;
     width: 45px;
     height: 35px;
 }

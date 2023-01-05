@@ -1,0 +1,35 @@
+
+.Separation{
+    height: 1px;
+    background-color: #EDEDED;
+}
+.ContainerFailed{
+    width: 1000px;
+    height: 200px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+}
+.ImgFailed{
+    width: 150px;
+    height: 150px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.TextFailed {
+align-self: center;
+margin-left: 50px;
+}
+.TextFailed h1{
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.TextFailed li{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Proxima Nova", -apple-system, Roboto, Arial, sans-serif;
+    margin-left: 20px;
+}

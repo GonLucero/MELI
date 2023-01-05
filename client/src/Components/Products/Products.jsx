@@ -5,7 +5,6 @@ import { Venta } from './Venta'
 
 export const Products = () => {
   const itemDetail = useSelector((store) => store.ProductDetail);
-  console.log("item",itemDetail)
   return (
     <div className='ContainerProduct'>
       <div className='PanelProduct'>

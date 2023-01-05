@@ -1,0 +1,54 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.ContainerImg{
+    /* width: 2000px;
+    height: 200px; */
+    margin-left: 30px;
+
+}
+.Img{
+    width: 180px;
+    height: 180px;
+    margin-top: 3px;
+}       
+.meli-results-list-item{
+    height: 250px;
+
+}
+.TitleContainer{
+    margin-left: 40px;
+    width: 700px;
+    margin-top: 15px;
+}
+.Title{
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 100;
+    align-items: center;
+    margin-top: 15px;
+    font-style: normal;
+}
+.Price2{
+    color: #000;
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    margin-left: 40px ;
+}
+.Adress{
+    color: rgb(53, 53, 53);
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    /* line-height: 30px; */
+    margin-left: -80px;
+    margin-top: 80px;
+}
+
+    

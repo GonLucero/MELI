@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { Header } from '../Header/Header'
-import { Hero } from '../Hero/Hero'
+import  Header  from '../Header/Header'
+import  Hero  from '../Hero/Hero'
 import { Products } from '../Products/Products'
 import { GetProductDetail } from "../../Actions";
 import './Styles.css'
@@ -12,7 +12,7 @@ function Front() {
   const dispatch = useDispatch();
   // me traigo la info del videojuego
   const itemDetail = useSelector((store) => store.ProductDetail);
-  console.log("id",itemDetail)
+  const loading = useSelector((store) => store.loadingDetail);
   // me traigo la id, que queda escrita en la url
   const {id} = useParams();
 
@@ -24,17 +24,17 @@ function Front() {
 
   return (
   
-    itemDetail.length === 0 ? 
-    <div>
-    <p>Loading...</p>
+    loading === true ? 
+    <div className='Navbar'>
+    <Header/>
     </div>
 
     :
     
-    <div className='ContainerFront'>
+    <div>
     <Header/>
     <div className='WrapperFront'>
-    <Hero/>
+    <Hero props={false} />
     <Products/>
     </div>
     </div>

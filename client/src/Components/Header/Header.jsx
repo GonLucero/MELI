@@ -3,7 +3,7 @@ import './Styles.css'
 import { useNavigate } from 'react-router-dom'
 import ic_search from './ic_Search.png';
 
-export const Header = () => {
+export default function Header(){
   const navigate = useNavigate()
 
   const [inputValue, setInputValue] = useState('');
@@ -16,7 +16,7 @@ export const Header = () => {
     e.preventDefault();
     
     if ( inputValue.trim().length > 2 ) {
-        navigate(`/items/${inputValue}`);
+        navigate(`/items?search=${inputValue}`);
         navigate(0);
     }
 }
