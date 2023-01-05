@@ -27,7 +27,10 @@ cd client/
 npm install
 npm start
 ```
-Desarrollado por Gonzalo Lucero, Fecha: 05/01/2023
+
+Entrar a : http://localhost:3000
+
+## Desarrollado por Gonzalo Lucero, Fecha: 05/01/2023
 
 
 
