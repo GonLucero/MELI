@@ -13,7 +13,8 @@ Tecnologías utilizadas: NodeJs, ExpressJs, axios.
 Es una aplicación creada en React con Hooks, Redux, axios, react-router-dom, css, npm.
 
 
-### Instalación
+## Instalación
+
 Backend:
 ```
 cd api/
