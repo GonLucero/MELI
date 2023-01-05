@@ -26,7 +26,7 @@ cd client/
 npm install
 npm start
 ```
-Desarrollado por Gonzalo Lucero Fecha: 05/01/2023
+Desarrollado por Gonzalo Lucero, Fecha: 05/01/2023
 
 
 
