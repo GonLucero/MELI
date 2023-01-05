@@ -1,0 +1,42 @@
+.ContainerHome{
+    width: 1000px;
+    height: 200px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+}
+.ImgHome{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    align-self: center;
+    object-fit: cover;
+}
+.TextHome {
+    width: 15%;
+    justify-self: center;
+    color: purple;
+    margin-left: 85%;
+    margin-top: 150px;
+    justify-content: flex-end;
+}
+.TextHome a{
+    font-size: 13px;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+}
+.TextHome h2{
+    font-size: 13px;
+    color: rgb(230, 202, 90);
+}
+.TextHome a:hover{
+    font-size: 13px;
+    color: red;
+}
+.TextHome h2:hover{
+    font-size: 13px;
+    color: red;
+}
+
+
+

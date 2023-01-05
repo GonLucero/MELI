@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector } from "react-redux";
 import './Styles.css'
-import { Venta } from './Venta'
+import SalesDetails from './SalesDetails';
 
-export const Products = () => {
+export default function Products() {
   const itemDetail = useSelector((store) => store.ProductDetail);
   return (
     <div className='ContainerProduct'>
@@ -16,7 +16,7 @@ export const Products = () => {
           <Info/>
         </div>
         <div className='ColumnProduct'>
-          <Venta/>
+          <SalesDetails/>
         </div>
 
       </div>

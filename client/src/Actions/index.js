@@ -31,3 +31,9 @@ export function Get_Detail(payload) {
         payload
     }
 }
+
+export function Reset() {
+  return {
+      type: 'RESET',
+  }
+}

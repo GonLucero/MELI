@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import './Styles.css'
 import { useNavigate } from 'react-router-dom'
-import ic_search from './ic_Search.png';
+import { Link } from 'react-router-dom';
+import { Reset } from '../../Actions';
+import { useDispatch } from "react-redux";
 
 export default function Header(){
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [inputValue, setInputValue] = useState('');
+  const url = `/`;
 
   const handleInputChange = ( e ) => {
       setInputValue( e.target.value );
@@ -21,12 +25,19 @@ export default function Header(){
     }
 }
 
+const GoHome = () => {
+  <Link to={url}></Link> 
+  dispatch(Reset())
+}
+
   return (
     <div className='ContainerHeader'>
       <div className='WrapperHeader'>
-        <img className='img' src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.16/mercadolibre/logo__large_plus@2x.png"
+      <Link to={url}>
+        <img onClick={() => GoHome()} className='img' src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.21.16/mercadolibre/logo__large_plus@2x.png"
         alt='logo'
         />
+      </Link> 
         <form onSubmit={ handleSubmit }>
         <div className='SearchContainer'>
             <input 

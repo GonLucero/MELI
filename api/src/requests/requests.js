@@ -89,7 +89,6 @@ const getItems = function(data){
 const getCategories = function(filters){
   return new Promise(function(resolve, reject){
     let categories = [];
-    // Obtengo las categorías recorriendo los filtros y buscando sus valores "category".
     for(var i=0;i<filters.length;i++){
       var filter = filters[i];
       if(filter.id === "category" && filter.values.length > 0){
@@ -161,9 +160,6 @@ const getItem = function(data, detailed = false){
       result.price.currency = currencyData.symbol;
       result.price.decimals = currencyData.decimals;
     }));
-    // neededPromises.push(getCategoriesID(data.category_id).then(function(categoryData){
-    //   result.category = categoryData;
-    // }));
     if(!detailed){
       if(data.thumbnail){
         result.picture = data.thumbnail.replace(/-I\./, "-X.");

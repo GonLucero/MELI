@@ -8,11 +8,9 @@ import "./Styles.css";
 export default function ResultsListItem({data}){
     console.log("data",data)
     const url = `/items/${data.id}`;
-
     const symbol = data.price.currency ;
     const price = data.price.amount.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
     const adress = data.adress
-    console.log()
 
     return (
             <div className="Container">

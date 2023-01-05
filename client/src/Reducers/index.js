@@ -24,6 +24,14 @@ const initialState = { //hago un estado inicial
                     SearchProduct: [],
                     loadingSearch: true,
                 };
+            case "RESET":
+                return {
+                    ...state,
+                    ProductDetail: [],
+                    loadingDetail: true,
+                    SearchProduct: [],
+                    loadingSearch: true,
+                };
             default:
                 return state;
       }

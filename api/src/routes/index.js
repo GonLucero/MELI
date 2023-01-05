@@ -6,7 +6,6 @@ router.get('/', function(req, res){
     res.send('Hola mundooo!'); 
   });
   
-
 router.get('/items', function(req, res) {
   const searchQuery = req.query.search;
   const error = function(errorMessage){

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import  Header  from '../Header/Header'
-import  Hero  from '../Hero/Hero'
-import { Products } from '../Products/Products'
+import Header from '../Header/Header'
+import Hero from '../Hero/Hero'
+import Products from './Products/Products'
 import { GetProductDetail } from "../../Actions";
 import './Styles.css'
 

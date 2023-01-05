@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector } from "react-redux";
-import './StylesVenta.css'
+import './StylesSalesDetails.css'
 
 
-export const Venta = () => {
+export default function SalesDetails() {
   const itemDetail = useSelector((store) => store.ProductDetail);
   return (
     <div className='ContainerVenta'>
