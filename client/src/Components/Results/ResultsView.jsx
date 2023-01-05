@@ -14,7 +14,6 @@ const useQuery = () => {
 export default function ResultsView() {
   const dispatch = useDispatch();
   let query = useQuery();
-
   const searchQuery = query.get('search');
   const itemDetail = useSelector((store) => store.SearchProduct);
   const loading = useSelector((store) => store.loadingSearch);

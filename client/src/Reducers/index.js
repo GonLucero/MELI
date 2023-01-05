@@ -1,11 +1,11 @@
-const initialState = { //hago un estado inicial
+const initialState = { 
     ProductDetail: [],
     loadingDetail : true,
     SearchProduct: [],   
     loadingSearch : true
   };
   
-  // 13)
+  
   export default function rootReducer(state = initialState, action) {
       switch (action.type) {
             case "SEARCH_PRODUCT":

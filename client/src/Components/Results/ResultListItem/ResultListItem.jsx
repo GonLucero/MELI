@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import "./Styles.css";
 
-// import { currencyFormat } from "../../helpers/number";
 
 export default function ResultsListItem({data}){
-    console.log("data",data)
     const url = `/items/${data.id}`;
     const symbol = data.price.currency ;
     const price = data.price.amount.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');

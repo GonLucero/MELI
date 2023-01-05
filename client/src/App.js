@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import "./Styles/Global.css";
+import "./Global.css";
 import Detail from './Components/Detail/Detail';
 import ResultsView from "./Components/Results/ResultsView";
 import Home from "./Components/Home/Home";

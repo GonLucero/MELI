@@ -10,37 +10,32 @@ import './Styles.css'
 
 function Front() {
   const dispatch = useDispatch();
-  // me traigo la info del videojuego
-  const itemDetail = useSelector((store) => store.ProductDetail);
   const loading = useSelector((store) => store.loadingDetail);
-  // me traigo la id, que queda escrita en la url
   const {id} = useParams();
 
 
   useEffect(() => {
-    dispatch(GetProductDetail(id)); // apenas entre a la pagina, mandame la info
+    dispatch(GetProductDetail(id)); 
   }, []); 
 
 
   return (
   
-    loading === true ? 
-    <div className='Navbar'>
-    <Header/>
-    </div>
+      loading === true ? 
+      <div className='Navbar'>
+        <Header/>
+      </div>
 
-    :
+      :
+      
+      <div>
+        <Header/>
+        <div className='WrapperFront'>
+          <Hero props={false} />
+          <Products/>
+        </div>
+      </div>
     
-    <div>
-    <Header/>
-    <div className='WrapperFront'>
-    <Hero props={false} />
-    <Products/>
-    </div>
-    </div>
-    
-  
-
   )
 }
 

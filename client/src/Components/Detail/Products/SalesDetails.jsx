@@ -2,23 +2,28 @@ import React from 'react'
 import { useSelector } from "react-redux";
 import './StylesSalesDetails.css'
 
-
 export default function SalesDetails() {
+
   const itemDetail = useSelector((store) => store.ProductDetail);
+  const condition = itemDetail.item.condition;
+  const sold_quantity = itemDetail.item.sold_quantity;
+  const title = itemDetail.item.title;
+  const currency = itemDetail.item.price.currency;
+  const amount = itemDetail.item.price.amount;
   return (
-    <div className='ContainerVenta'>
-        <div className='Estado'>
-            {itemDetail.item.condition === 'new' ? 'Nuevo' : 'Usado'} | {itemDetail.item.sold_quantity} vendidos
+    <div className='ContainerSales'>
+        <div className='State'>
+            {condition === 'new' ? 'Nuevo' : 'Usado'} | {sold_quantity} vendidos
         </div>
-        <div className='RowVenta'>
+        <div className='RowSales'>
             <h1>
-            {itemDetail.item.title}
+            {title}
             </h1>
         </div>
           <div className='Price'>
-            <p>{itemDetail.item.price.currency}</p> 
-            <p className='NumberPrice'>{itemDetail.item.price.amount.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</p>            
-            </div>
+            <p>{currency}</p> 
+            <p className='NumberPrice'>{amount.toFixed(0).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')}</p>            
+          </div>
           <div className='ButtonCard'>
               <button className='solid'>Comprar</button>
           </div>
