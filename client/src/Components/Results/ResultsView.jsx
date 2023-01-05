@@ -20,19 +20,26 @@ export default function ResultsView() {
 
   useEffect(() => {
     dispatch(SearchProducts(searchQuery)); // apenas entre a la pagina, mandame la info
-  }, []); 
+  }, [dispatch, searchQuery]); 
 
 
   return (
     loading === true ? 
-      <div className='Navbar2'>
+      <div>
       <Header/>
       </div>
     :
       <div>
-        <Header/>
+        <div>
+          <Header/>
+        </div>
         <div className='WrapperFront'>
-           <Hero props={true}/>
+          {
+            itemDetail?.items.length !== 0 ?
+            <Hero props={true}/>
+           : null
+          }
+
         </div>
         <div className='ListFront'>
           <ResultList search={searchQuery} items={itemDetail.items} />

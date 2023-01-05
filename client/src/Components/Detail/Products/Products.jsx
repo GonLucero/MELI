@@ -33,8 +33,7 @@ const Info = () => {
   return (
     <div className='Description'>
         <h4>Descripción del Producto</h4>
-        <p>
-        <div dangerouslySetInnerHTML={{ __html: description.replace(/(\r\n|\n|\r)/gm, "<br>") }} /></p>
+        <p dangerouslySetInnerHTML={{ __html: description.replace(/(\r\n|\n|\r)/gm, "<br>") }} />
     </div>
   )
 }

@@ -7,7 +7,7 @@ export default function Home(){
 
     return (
           <div>
-            <div className='Navbar2'>
+            <div>
             <Header/>
             </div>
             <img className='ImgHome' src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/exhibitors/fallbacks/es-desktop.jpg"

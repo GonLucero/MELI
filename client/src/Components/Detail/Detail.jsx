@@ -16,20 +16,22 @@ function Front() {
 
   useEffect(() => {
     dispatch(GetProductDetail(id)); 
-  }, []); 
+  }, [dispatch, id]); 
 
 
   return (
   
       loading === true ? 
-      <div className='Navbar'>
+      <div>
         <Header/>
       </div>
 
       :
       
       <div>
-        <Header/>
+        <div>
+          <Header/>
+        </div>
         <div className='WrapperFront'>
           <Hero props={false} />
           <Products/>
