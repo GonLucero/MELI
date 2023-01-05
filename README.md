@@ -6,14 +6,15 @@ El objetivo de este proyecto es construir un Front-End y un Back-End que interac
 ## Back-End
 
 Se utilizo el siguiente endpoint de Mercado Libre https://api.mercadolibre.com/sites/MLA/search?q={query}
-Tecnologías usar para el back: node js, express js, axios.
+Tecnologías utilizadas: NodeJs, ExpressJs, axios.
 
 ## Front-End
 
-Es una apilicación creada en react con hooks y redux, axios, react-router-dom, css, npm.\
+Es una aplicación creada en React con Hooks, Redux, axios, react-router-dom, css, npm.
 
 
-### Instalación
+## Instalación
+
 Backend:
 ```
 cd api/
@@ -25,9 +26,8 @@ Frontend:
 cd client/
 npm install
 npm start
-
----
-Desarrollado por Gonzalo Lucero Fecha: 05/01/2023
+```
+Desarrollado por Gonzalo Lucero, Fecha: 05/01/2023
 
 
 
