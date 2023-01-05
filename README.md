@@ -10,7 +10,7 @@ Tecnologías utilizadas: NodeJs, ExpressJs, axios.
 
 ## Front-End
 
-Es una aplicación creada en React con Hooks, Redux, axios, react-router-dom, css, npm.\
+Es una aplicación creada en React con Hooks, Redux, axios, react-router-dom, css, npm.
 
 
 ### Instalación
@@ -25,8 +25,7 @@ Frontend:
 cd client/
 npm install
 npm start
-
----
+```
 Desarrollado por Gonzalo Lucero Fecha: 05/01/2023
 
 
