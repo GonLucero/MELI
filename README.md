@@ -1,4 +1,4 @@
-# Labs Challenge 
+# Labs Challenge
 
 El objetivo de este proyecto es construir un Front-End y un Back-End que interactue con la API pública de Mercado Libre.
 
@@ -30,7 +30,7 @@ npm start
 
 Entrar a : http://localhost:3000
 
-## Desarrollado por Gonzalo Lucero, Fecha: 05/01/2023
+## Desarrollado por Gonzalo Lucero, Fecha: 27/02/2023
 
 
 
