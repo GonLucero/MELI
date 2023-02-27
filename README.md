@@ -1,4 +1,4 @@
-# Labs Challenge
+# Labs Challenge 
 
 El objetivo de este proyecto es construir un Front-End y un Back-End que interactue con la API pública de Mercado Libre.
 
